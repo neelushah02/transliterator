@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>transliterator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-16">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson Text">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">   
+</head>    
+<body>
+    <div id="container">
+        <h1 class="name">transliterator</h1>
+        <span class="key-info">
+            This page allows you to transliterate text from the Devanagari script to Roman Script. It implements the <a href="https://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration#:~:text=The%20International%20Alphabet%20of%20Sanskrit,Sanskrit%20and%20related%20Indic%20languages.">IAST</a> scheme, which allows for lossless romanization of the Devanagari script. Enter your text below and press convert.
+        </span><br><br><br>
+        <label for="devanagari" class="key-info">Devanagari Text:</label><br><br>
+        <textarea id="devanagari" rows="10" cols="150" oninput="onChange()"></textarea><br><br>
+        <label for="roman" class="key-info">Roman Text:</label><br><br>
+        <textarea id="roman" rows="10" cols="150"></textarea><br><br>
+    </div>
+    <script src="transliterator.js"></script>
+    <script src= "https://code.jquery.com/jquery-1.12.4.min.js"></script> 
+</body>
+</html>
